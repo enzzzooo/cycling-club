@@ -7,12 +7,19 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <a
               href="/"
-              className="group text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
+              className="group flex items-center gap-3 text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
             >
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                SLU Madrid
-              </span>
-              <span className="ml-2">Cycling Club</span>
+              <img
+                src="/slu-madrid-logo.svg"
+                alt="SLU Madrid Logo"
+                className="h-12 w-auto"
+              />
+              <div>
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  SLU Madrid
+                </span>
+                <span className="ml-2">Cycling Club</span>
+              </div>
             </a>
             <nav className="flex gap-6">
               <a
@@ -33,30 +40,45 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-emerald-500/10 dark:from-blue-600/20 dark:via-purple-600/10 dark:to-emerald-600/20 animate-gradient" />
+      <section className="relative overflow-hidden min-h-[600px]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://coliving.joivy.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fynnxiqcetcwf%2F6rX5EwF1QcoOY974ik449Q%2F95253ad64cacfc5bb9863331a737eca2%2FMicrosoftTeams-image-dall-alto.png&w=3840&q=75"
+            alt="Madrid Campus"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        </div>
+
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/10 to-emerald-500/20 dark:from-blue-600/30 dark:via-purple-600/20 dark:to-emerald-600/30 animate-gradient z-10" />
+
         {/* Animated circles */}
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-400/20 blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-emerald-400/20 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-400/20 blur-3xl animate-pulse z-10" />
+        <div
+          className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-emerald-400/20 blur-3xl animate-pulse z-10"
+          style={{ animationDelay: "1s" }}
+        />
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 z-20">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/50 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-blue-700 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-300 shadow-lg">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-white shadow-lg">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-300" />
               </span>
               Now Recruiting Members
             </div>
-            <h1 className="text-5xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-7xl animate-fade-in">
+            <h1 className="text-5xl font-bold tracking-tight text-white sm:text-7xl animate-fade-in drop-shadow-2xl">
               SLU Madrid
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 bg-clip-text text-transparent animate-gradient-text">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent animate-gradient-text">
                 {" "}
                 Cycling{" "}
               </span>
               Club
             </h1>
-            <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400 animate-fade-in-delay">
+            <p className="mt-6 text-lg leading-8 text-white/90 animate-fade-in-delay drop-shadow-lg">
               Join our vibrant community of cycling enthusiasts. Whether
               you&apos;re a beginner or a seasoned rider, discover new routes,
               build fitness, and make lifelong friends.
@@ -136,8 +158,8 @@ export default function Home() {
                 Weekly Rides
               </h3>
               <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-                Join us every Saturday for group rides exploring scenic routes and
-                building fitness together.
+                Join us every Saturday for group rides exploring scenic routes
+                and building fitness together.
               </p>
             </div>
           </div>
@@ -209,7 +231,9 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/0 to-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
                 <div className="relative">
                   <div className="mb-3 text-3xl">{benefit.icon}</div>
-                  <h3 className="font-semibold text-white text-lg">{benefit.title}</h3>
+                  <h3 className="font-semibold text-white text-lg">
+                    {benefit.title}
+                  </h3>
                   <p className="mt-2 text-sm text-blue-100">{benefit.desc}</p>
                 </div>
               </div>
@@ -224,7 +248,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-emerald-600/20" />
           <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl" />
-          
+
           <div className="relative mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Ready to Start?
@@ -254,7 +278,7 @@ export default function Home() {
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
           <div className="text-center text-sm text-zinc-600 dark:text-zinc-400">
-            <p>&copy; 2024 SLU Madrid Cycling Club. All rights reserved.</p>
+            <p>&copy; 2025 SLU Madrid Cycling Club. All rights reserved.</p>
           </div>
         </div>
       </footer>

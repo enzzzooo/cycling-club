@@ -7,12 +7,19 @@ export default function Photos() {
           <div className="flex items-center justify-between">
             <a
               href="/"
-              className="group text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
+              className="group flex items-center gap-3 text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
             >
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                SLU Madrid
-              </span>
-              <span className="ml-2">Cycling Club</span>
+              <img 
+                src="/slu-madrid-logo.svg" 
+                alt="SLU Madrid Logo" 
+                className="h-12 w-auto"
+              />
+              <div>
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  SLU Madrid
+                </span>
+                <span className="ml-2">Cycling Club</span>
+              </div>
             </a>
             <nav className="flex gap-6">
               <a
