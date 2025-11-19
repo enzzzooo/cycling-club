@@ -122,8 +122,8 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-600 dark:text-blue-500">
+        <div className="mx-auto max-w-2xl text-center mb-16">
+          <h2 className="text-base font-semibold leading-7 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Who We Are
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">
@@ -135,6 +135,27 @@ export default function Home() {
             something for everyone.
           </p>
         </div>
+
+        {/* Campus Image Section */}
+        <div className="mb-16 overflow-hidden rounded-3xl shadow-2xl">
+          <div className="relative h-[400px] lg:h-[500px]">
+            <img
+              src="https://www.commonapp.org/static/1ab34ecbf1578d644b4b601f77c80bf4/saint-louis-university-madrid_795.jpg"
+              alt="Saint Louis University Madrid Campus"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+              <h3 className="text-3xl font-bold drop-shadow-lg">
+                Ride Through Madrid
+              </h3>
+              <p className="mt-2 text-lg text-white/90 drop-shadow-md">
+                Explore the beauty of our campus and the city on two wheels
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2">
           <div className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-gradient-to-br from-white to-blue-50/30 p-8 shadow-lg transition-all hover:shadow-2xl hover:scale-105 dark:border-zinc-800 dark:from-zinc-900 dark:to-blue-950/30">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/5 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -278,7 +299,7 @@ export default function Home() {
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
           <div className="text-center text-sm text-zinc-600 dark:text-zinc-400">
-            <p>&copy; 2025 SLU Madrid Cycling Club. All rights reserved.</p>
+            <p>&copy; 2026 SLU Madrid Cycling Club. All rights reserved.</p>
           </div>
         </div>
       </footer>

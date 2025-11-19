@@ -9,9 +9,9 @@ export default function Photos() {
               href="/"
               className="group flex items-center gap-3 text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
             >
-              <img 
-                src="/slu-madrid-logo.svg" 
-                alt="SLU Madrid Logo" 
+              <img
+                src="/slu-madrid-logo.svg"
+                alt="SLU Madrid Logo"
                 className="h-12 w-auto"
               />
               <div>
@@ -60,7 +60,7 @@ export default function Photos() {
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
           <div className="text-center text-sm text-zinc-600 dark:text-zinc-400">
-            <p>&copy; 2024 SLU Madrid Cycling Club. All rights reserved.</p>
+            <p>&copy; 2026 SLU Madrid Cycling Club. All rights reserved.</p>
           </div>
         </div>
       </footer>
