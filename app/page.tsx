@@ -1,6 +1,40 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-zinc-50 dark:from-zinc-950 dark:to-black">
+      {/* Header */}
+      <header className="border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/80">
+        <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            <a
+              href="/"
+              className="text-2xl font-bold text-zinc-900 dark:text-white"
+            >
+              University Cycling Club
+            </a>
+            <nav className="flex gap-6">
+              <a
+                href="/"
+                className="text-sm font-medium text-blue-600 dark:text-blue-500"
+              >
+                Home
+              </a>
+              <a
+                href="/photos"
+                className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              >
+                Photos
+              </a>
+              <a
+                href="/contact"
+                className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-emerald-500/10 dark:from-blue-600/20 dark:to-emerald-600/20" />
@@ -28,7 +62,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="#join"
+                href="/contact"
                 className="group w-full rounded-full bg-blue-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-blue-700 hover:shadow-xl hover:scale-105 sm:w-auto"
               >
                 Join the Club
@@ -50,37 +84,13 @@ export default function Home() {
       {/* Stats Section */}
       <section className="border-y border-zinc-200 bg-white/50 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/50">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="flex justify-center">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-500">
-                150+
+                Every Saturday
               </div>
               <div className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                Active Members
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 dark:text-emerald-500">
-                3x
-              </div>
-              <div className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                Weekly Rides
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-500">
-                12
-              </div>
-              <div className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                Annual Events
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-orange-600 dark:text-orange-500">
-                5
-              </div>
-              <div className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                Years Running
+                Weekly Ride
               </div>
             </div>
           </div>
@@ -102,7 +112,7 @@ export default function Home() {
             something for everyone.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2">
           <div className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900">
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-950">
               <svg
@@ -120,36 +130,10 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
-              Regular Rides
+              Weekly Rides
             </h3>
             <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-              Join our scheduled group rides every week, from leisurely weekend
-              spins to challenging hill climbs.
-            </p>
-          </div>
-
-          <div className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 dark:bg-emerald-950">
-              <svg
-                className="h-6 w-6 text-emerald-600 dark:text-emerald-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
-              Skill Development
-            </h3>
-            <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-              Improve your cycling skills with coaching sessions, maintenance
-              workshops, and safety training.
+              Join us every Saturday for group rides exploring scenic routes and building fitness together.
             </p>
           </div>
 
@@ -170,11 +154,10 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
-              Social Events
+              Community
             </h3>
             <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-              Connect with fellow cyclists at our social gatherings, film
-              nights, and end-of-season celebrations.
+              Connect with fellow cycling enthusiasts and build lasting friendships.
             </p>
           </div>
         </div>
@@ -198,16 +181,8 @@ export default function Home() {
                 desc: "Access to partner bike shops with member discounts",
               },
               {
-                title: "Free Coaching",
-                desc: "Expert guidance from experienced riders and coaches",
-              },
-              {
                 title: "Bike Maintenance",
                 desc: "Use our workshop facilities and tools anytime",
-              },
-              {
-                title: "Race Support",
-                desc: "Team kit, entry fees, and transport to events",
               },
               {
                 title: "Bike Storage",
@@ -216,6 +191,14 @@ export default function Home() {
               {
                 title: "Community",
                 desc: "Meet like-minded students and build friendships",
+              },
+              {
+                title: "Group Rides",
+                desc: "Enjoy safer and more fun riding experiences together",
+              },
+              {
+                title: "Route Discovery",
+                desc: "Explore new cycling routes with experienced members",
               },
             ].map((benefit, index) => (
               <div
@@ -244,16 +227,16 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="#"
+                href="/contact"
                 className="w-full rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-zinc-900 shadow-lg transition-all hover:bg-zinc-100 hover:shadow-xl hover:scale-105 sm:w-auto"
               >
-                Sign Up Now
+                Contact Us
               </a>
               <a
-                href="#"
+                href="/photos"
                 className="w-full rounded-full border border-white/30 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur transition-all hover:bg-white/10 sm:w-auto"
               >
-                Contact Us
+                View Photos
               </a>
             </div>
           </div>
