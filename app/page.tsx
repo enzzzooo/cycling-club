@@ -9,7 +9,7 @@ export default function Home() {
               href="/"
               className="text-2xl font-bold text-zinc-900 dark:text-white"
             >
-              University Cycling Club
+              SLU Madrid Cycling Club
             </a>
             <nav className="flex gap-6">
               <a
@@ -23,12 +23,6 @@ export default function Home() {
                 className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
               >
                 Photos
-              </a>
-              <a
-                href="/contact"
-                className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
-              >
-                Contact
               </a>
             </nav>
           </div>
@@ -48,7 +42,7 @@ export default function Home() {
               Now Recruiting Members
             </div>
             <h1 className="text-5xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-7xl">
-              University
+              SLU Madrid
               <span className="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">
                 {" "}
                 Cycling{" "}
@@ -62,19 +56,13 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="/contact"
+                href="#join"
                 className="group w-full rounded-full bg-blue-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-blue-700 hover:shadow-xl hover:scale-105 sm:w-auto"
               >
-                Join the Club
+                Join Us
                 <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
                   →
                 </span>
-              </a>
-              <a
-                href="#about"
-                className="w-full rounded-full border border-zinc-300 bg-white px-8 py-3.5 text-sm font-semibold text-zinc-900 shadow-sm transition-all hover:bg-zinc-50 hover:shadow dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 sm:w-auto"
-              >
-                Learn More
               </a>
             </div>
           </div>
@@ -133,7 +121,8 @@ export default function Home() {
               Weekly Rides
             </h3>
             <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-              Join us every Saturday for group rides exploring scenic routes and building fitness together.
+              Join us every Saturday for group rides exploring scenic routes and
+              building fitness together.
             </p>
           </div>
 
@@ -157,7 +146,8 @@ export default function Home() {
               Community
             </h3>
             <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-              Connect with fellow cycling enthusiasts and build lasting friendships.
+              Connect with fellow cycling enthusiasts and build lasting
+              friendships.
             </p>
           </div>
         </div>
@@ -176,14 +166,6 @@ export default function Home() {
           </div>
           <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              {
-                title: "Discounted Equipment",
-                desc: "Access to partner bike shops with member discounts",
-              },
-              {
-                title: "Bike Maintenance",
-                desc: "Use our workshop facilities and tools anytime",
-              },
               {
                 title: "Bike Storage",
                 desc: "Secure on-campus storage for your bicycle",
@@ -219,25 +201,22 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-emerald-600/20" />
           <div className="relative mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to Start Your Journey?
+              Ready to Start?
             </h2>
             <p className="mt-6 text-lg leading-8 text-zinc-300">
               Join us today and become part of a thriving cycling community. New
               members are always welcome, regardless of experience level.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-10">
               <a
-                href="/contact"
-                className="w-full rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-zinc-900 shadow-lg transition-all hover:bg-zinc-100 hover:shadow-xl hover:scale-105 sm:w-auto"
+                href="mailto:cycling@slu.edu"
+                className="text-4xl font-bold text-white hover:text-blue-300 transition-colors sm:text-5xl"
               >
-                Contact Us
+                cycling@slu.edu
               </a>
-              <a
-                href="/photos"
-                className="w-full rounded-full border border-white/30 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur transition-all hover:bg-white/10 sm:w-auto"
-              >
-                View Photos
-              </a>
+              <p className="mt-6 text-lg text-zinc-300">
+                Or check the posters on campus for more information
+              </p>
             </div>
           </div>
         </div>
@@ -247,7 +226,7 @@ export default function Home() {
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
           <div className="text-center text-sm text-zinc-600 dark:text-zinc-400">
-            <p>&copy; 2024 University Cycling Club. All rights reserved.</p>
+            <p>&copy; 2024 SLU Madrid Cycling Club. All rights reserved.</p>
           </div>
         </div>
       </footer>
