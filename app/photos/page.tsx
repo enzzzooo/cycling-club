@@ -12,7 +12,7 @@ export default function Photos() {
               <img
                 src="/slu-madrid-logo.svg"
                 alt="SLU Madrid Logo"
-                className="h-6 w-auto"
+                className="h-12 w-auto"
               />
               <div>
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -21,7 +21,7 @@ export default function Photos() {
                 <span className="ml-2">Cycling Club</span>
               </div>
             </a>
-            <nav className="flex gap-6 items-center">
+            <nav className="flex gap-6">
               <a
                 href="/"
                 className="text-sm font-medium text-zinc-600 transition-all hover:text-zinc-900 hover:scale-105 dark:text-zinc-400 dark:hover:text-white"
@@ -33,12 +33,6 @@ export default function Photos() {
                 className="text-sm font-medium text-blue-600 dark:text-blue-500 transition-all hover:scale-105"
               >
                 Photos
-              </a>
-              <a
-                href="/#join"
-                className="text-sm font-medium text-zinc-600 transition-all hover:text-zinc-900 hover:scale-105 dark:text-zinc-400 dark:hover:text-white"
-              >
-                Contact
               </a>
             </nav>
           </div>
@@ -65,13 +59,6 @@ export default function Photos() {
       {/* Footer */}
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-          <div className="mb-8 overflow-hidden rounded-2xl">
-            <img
-              src="/slu-campus.jpg"
-              alt="SLU Madrid Campus"
-              className="w-full h-auto object-cover"
-            />
-          </div>
           <div className="text-center text-sm text-zinc-600 dark:text-zinc-400">
             <p>&copy; 2026 SLU Madrid Cycling Club. All rights reserved.</p>
           </div>

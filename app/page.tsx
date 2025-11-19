@@ -12,7 +12,7 @@ export default function Home() {
               <img
                 src="/slu-madrid-logo.svg"
                 alt="SLU Madrid Logo"
-                className="h-6 w-auto"
+                className="h-12 w-auto"
               />
               <div>
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -21,7 +21,7 @@ export default function Home() {
                 <span className="ml-2">Cycling Club</span>
               </div>
             </a>
-            <nav className="flex gap-6 items-center">
+            <nav className="flex gap-6">
               <a
                 href="/"
                 className="text-sm font-medium text-blue-600 dark:text-blue-500 transition-all hover:scale-105"
@@ -34,12 +34,6 @@ export default function Home() {
               >
                 Photos
               </a>
-              <a
-                href="#join"
-                className="text-sm font-medium text-zinc-600 transition-all hover:text-zinc-900 hover:scale-105 dark:text-zinc-400 dark:hover:text-white"
-              >
-                Contact
-              </a>
             </nav>
           </div>
         </div>
@@ -50,7 +44,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/madrid-background.jpg"
+            src="https://coliving.joivy.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fynnxiqcetcwf%2F6rX5EwF1QcoOY974ik449Q%2F95253ad64cacfc5bb9863331a737eca2%2FMicrosoftTeams-image-dall-alto.png&w=3840&q=75"
             alt="Madrid Campus"
             className="w-full h-full object-cover"
           />
@@ -144,13 +138,18 @@ export default function Home() {
 
         {/* Campus Image Section */}
         <div className="mb-16 overflow-hidden rounded-3xl shadow-2xl">
-          <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-emerald-600 p-12 text-center">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTR6bTAtMjBjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20" />
-            <div className="relative">
-              <h3 className="text-4xl font-bold text-white drop-shadow-lg">
+          <div className="relative h-[400px] lg:h-[500px]">
+            <img
+              src="https://www.commonapp.org/static/1ab34ecbf1578d644b4b601f77c80bf4/saint-louis-university-madrid_795.jpg"
+              alt="Saint Louis University Madrid Campus"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+              <h3 className="text-3xl font-bold drop-shadow-lg">
                 Ride Through Madrid
               </h3>
-              <p className="mt-4 text-xl text-white/90 drop-shadow-md max-w-2xl mx-auto">
+              <p className="mt-2 text-lg text-white/90 drop-shadow-md">
                 Explore the beauty of our campus and the city on two wheels
               </p>
             </div>
@@ -299,13 +298,6 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-          <div className="mb-8 overflow-hidden rounded-2xl">
-            <img
-              src="/slu-campus.jpg"
-              alt="SLU Madrid Campus"
-              className="w-full h-auto object-cover"
-            />
-          </div>
           <div className="text-center text-sm text-zinc-600 dark:text-zinc-400">
             <p>&copy; 2026 SLU Madrid Cycling Club. All rights reserved.</p>
           </div>
