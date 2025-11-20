@@ -9,11 +9,13 @@ export default function Photos() {
               href="/"
               className="group flex items-center gap-2 sm:gap-3 text-lg sm:text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
             >
-              <img
-                src="/slu-logo.svg"
-                alt="SLU Logo"
-                className="h-8 w-8 sm:h-10 sm:w-10"
-              />
+              <div className="flex-shrink-0 h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center">
+                <img
+                  src="/slu-logo.svg"
+                  alt="SLU Logo"
+                  className="h-6 w-6 sm:h-8 sm:w-8 object-contain"
+                />
+              </div>
               <div className="flex flex-col sm:flex-row sm:items-baseline gap-0 sm:gap-2">
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
                   SLU Madrid
@@ -21,7 +23,7 @@ export default function Photos() {
                 <span className="text-sm sm:text-2xl leading-tight">Cycling Club</span>
               </div>
             </a>
-            <div className="flex items-center gap-3 sm:gap-6">
+            <div className="flex items-center gap-4 sm:gap-6">
               <nav className="flex gap-4 sm:gap-6">
                 <a
                   href="/"
@@ -38,7 +40,7 @@ export default function Photos() {
               </nav>
               <a
                 href="/#join"
-                className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105"
               >
                 Contact
               </a>
