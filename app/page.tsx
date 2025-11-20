@@ -3,38 +3,46 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-white to-zinc-50 dark:from-zinc-950 dark:to-black">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-zinc-200/50 bg-white/80 backdrop-blur-xl dark:border-zinc-800/50 dark:bg-zinc-900/80">
-        <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
-          <div className="flex items-center justify-between">
+        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+          <div className="flex items-center justify-between gap-3">
             <a
               href="/"
-              className="group flex items-center gap-3 text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
+              className="group flex items-center gap-2 sm:gap-3 text-lg sm:text-2xl font-bold text-zinc-900 dark:text-white transition-all hover:scale-105"
             >
               <img
-                src="/slu-madrid-logo.svg"
-                alt="SLU Madrid Logo"
-                className="h-12 w-auto"
+                src="/slu-logo.svg"
+                alt="SLU Logo"
+                className="h-8 w-8 sm:h-10 sm:w-10"
               />
-              <div>
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <div className="flex flex-col sm:flex-row sm:items-baseline gap-0 sm:gap-2">
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
                   SLU Madrid
                 </span>
-                <span className="ml-2">Cycling Club</span>
+                <span className="text-sm sm:text-2xl leading-tight">Cycling Club</span>
               </div>
             </a>
-            <nav className="flex gap-6">
+            <div className="flex items-center gap-3 sm:gap-6">
+              <nav className="flex gap-4 sm:gap-6">
+                <a
+                  href="/"
+                  className="text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-500 transition-all hover:scale-105"
+                >
+                  Home
+                </a>
+                <a
+                  href="/photos"
+                  className="text-xs sm:text-sm font-medium text-zinc-600 transition-all hover:text-zinc-900 hover:scale-105 dark:text-zinc-400 dark:hover:text-white"
+                >
+                  Photos
+                </a>
+              </nav>
               <a
-                href="/"
-                className="text-sm font-medium text-blue-600 dark:text-blue-500 transition-all hover:scale-105"
+                href="mailto:cycling@slu.edu"
+                className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105"
               >
-                Home
+                Contact
               </a>
-              <a
-                href="/photos"
-                className="text-sm font-medium text-zinc-600 transition-all hover:text-zinc-900 hover:scale-105 dark:text-zinc-400 dark:hover:text-white"
-              >
-                Photos
-              </a>
-            </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -81,7 +89,7 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-white/90 animate-fade-in-delay drop-shadow-lg">
               Join our vibrant community of cycling enthusiasts. Whether
               you&apos;re a beginner or a seasoned rider, discover new routes,
-              build fitness, and make lifelong friends.
+              build fitness, and make new friends.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
@@ -104,11 +112,11 @@ export default function Home() {
       {/* Stats Section */}
       <section className="border-y border-zinc-200 bg-white/50 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/50">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="flex justify-center">
-            <div className="group relative text-center">
+          <div className="flex justify-center overflow-hidden">
+            <div className="group relative text-center px-4 w-full">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-emerald-600/20 blur-2xl transition-all group-hover:blur-3xl" />
               <div className="relative">
-                <div className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent transition-transform group-hover:scale-110">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent transition-transform group-hover:scale-110 break-words">
                   Every Saturday
                 </div>
                 <div className="mt-2 text-sm font-medium text-zinc-600 dark:text-zinc-400">
@@ -131,7 +139,7 @@ export default function Home() {
           </p>
           <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             We&apos;re a diverse community of students united by our passion for
-            cycling. From casual coffee rides to competitive racing, we offer
+            cycling. From casual coffee rides to long distance treks, there&apos;s
             something for everyone.
           </p>
         </div>
