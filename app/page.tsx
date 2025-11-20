@@ -37,7 +37,7 @@ export default function Home() {
                 </a>
               </nav>
               <a
-                href="mailto:cycling@slu.edu"
+                href="#join"
                 className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105"
               >
                 Contact
